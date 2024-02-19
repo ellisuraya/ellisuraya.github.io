@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+ 
+  "title": {"text": "GDP Per Capita"},
+ 
+  "width": 400,
+  "height": 300,
+   
+  "data": {
+    "values": [
+        {"Country": "Malaysia","GDP per capita": 11993},
+        {"Country": "Thailand.","GDP per capita": 6910},
+        {"Country": "Vietnam","GDP per capita": 4163},
+        {"Country": "Singapore","GDP per capita": 82706},
+        {"Country": "Indonesia","GDP per capita": 4788},
+        {"Country": "Cambodia","GDP per capita": 1759}]
+  },
+ 
+  "mark": {
+    "type": "bar",
+    "color": "royalblue"},
+ 
+  "encoding": {
+    "x": {"field": "Country"},  
+ 
+    "y": {
+      "field": "GDP per capita",
+      "type": "quantitative"}}
+}
+ 
